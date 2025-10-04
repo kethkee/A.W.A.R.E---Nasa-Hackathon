@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NASA Data & Risk Maps</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <script src="scripts/map.js" defer></script>
+</head>
+
+<body class="theme-datamaps">
+    <header>
+        <h1>Analyzing Risk with NASA Data</h1>
+        <p>Using Earth Observation Data for Public Health</p>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="symptoms.html">Symptoms</a>
+            <a href="prevention.html">Prevention</a>
+            <a href="risk_checker.html">Risk Checker</a>
+            <a href="data_maps.html" class="active-tab">Risk Data</a>
+           
+            <a href="notifications.html">Alerts</a>
+            <a href="news.html">News</a>
+            <a href="faq.html">FAQ</a>
+        </nav>
+    </header>
+    <main class="content">
+        <section class="selection-section">
+            <h2>Select State for Detailed Environmental Data</h2>
+            <p style="text-align: center; max-width: 600px; margin: auto; margin-bottom: 2rem;">
+                Choose a state below to view its waterbody risk summary and fetch the latest average air temperature and humidity from NASA's databases.
+            </p>
+
+            <form id="stateSelectionForm" class="selection-form">
+                <label for="stateSelector">Choose an Indian State:</label>
+                <select id="stateSelector" required>
+                    <option value="" disabled selected>-- Select State --</option>
+                    </select>
+            </form>
+
+            <div id="stateData" class="data-panel" style="min-height: 250px;">
+                <h3>Environmental Data & Risk Summary</h3>
+                <p>Select a state to load NASA data and the average waterbody risk summary.</p>
+            </div>
+       
+
+       
+    </main>
+    <footer>
+        <p>© 2025 Amoeba Awareness Project. Data for a Safer Tomorrow.</p>
+    </footer>
+</body>
+
+</html>
