@@ -32,6 +32,7 @@ document.getElementById("predictionForm").addEventListener("submit", function(ev
     }
 
     const resultDiv = document.getElementById("result");
+    resultDiv.style.display = "block"; // This line is the fix
     resultDiv.className = `result-box ${riskClass}`;
     resultDiv.innerHTML = `<h3>🧪 Prediction Result</h3>
         ${location ? `<p><strong>Location:</strong> ${location}</p>` : ""}
